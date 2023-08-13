@@ -26,8 +26,9 @@ int main() {
     
     int num = limit;
     int is_prime = 1; // Assuming num is prime
-    
-    do {
+
+    for (int i = 0; num >= 2; num--)
+    {
         if (num <= 1) {
             is_prime = 0;
         } else {
@@ -43,10 +44,10 @@ int main() {
             printf("%d ", num);
         }
         
-        num--;
-        is_prime = 1; // Reset is_prime for the next iteration
-    } while (num >= 2);
-    
+        is_prime = 1;
+    }
+
+
     printf("\n");
     
     return 0;
